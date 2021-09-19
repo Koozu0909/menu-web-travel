@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- Swiper's CSS -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<body>
+    <!-- HEADER:START -->
+ <header class="header" id="header">
+    <nav class="nav container">
+        <a href="index-tour.html" class="nav-logo">Travel Tour</a>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link nav-home" >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#review" class="nav-link">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Places" class="nav-link">Packeges</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="nav-link">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Contact" class="nav-link">Contact</a>
+                </li>
+                <li>
+                    <a href="login&registered/login.html"> <i class="fas fa-user nav-user " id="nav-user"></i></a>   
+                </li>
+            </ul>
+            <i class="fas fa-times nav-close " id="nav-close" ></i>
+        </div> 
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+  </header>
+  <!-- HEADER:END -->
+  <main class="main">
+    <section class="category-filter">
+        <div class="category-filter-container container">
+            <div class="category-filter-left">
+                <ul class="category-filter-items">
+                    <div class = "category-title active" id = "all">
+                        <li>All </li>
+                        <span> <i class = "fas fa-border-all"></i></span>
+                    </div>
+                    <div class = "category-title" id = "mountain">
+                        <li>Mountain </li>
+                        <span> <i class="fas fa-mountains"></i></span>
+                    </div>
+                    <div class = "category-title" id = "beach">
+                        <li>Beach </li>
+                        <span> <i class = "fas fa-umbrella-beach"></i></span>
+                    </div>
+                    <div class = "category-title" id = "island">
+                        <li>Island </li>
+                        <span> <i class = "fas fa-island-tropical"></i></span>
+                    </div>
+                    <div class = "category-title" id = "city">
+                        <li>City </li>
+                        <span> <i class = "fas fa-city"></i></span>
+                    </div>
+                    <div class = "category-title" id = "jungle">
+                        <li>Jungle </li>
+                        <span> <i class="fas fa-trees"></i></span>
+                    </div>
+                </ul>
+            </div>
+            <div class="category-filter-right">
+                <div class="filters">
+                    <div >
+                        <p>Anytime <span><i class="far fa-chevron-down"></i></span></p>
+                    </div>
+                    <div class="filter-hover">
+                        <p>Guest <span><i class="far fa-chevron-down"></i></span></p>
+                    </div>
+                    <div  class="filter-hover">
+                        <p> <span><i class="fas fa-filter"></i></span> Filter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class = "category-title active" id = "all">
+                    <span>All </span>
+                    <span> <i class = "fas fa-border-all"></i></span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class = "category-title" id = "mountain">
+                    <span>Mountain </span>
+                    <span> <i class="fas fa-mountains"></i></span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class = "category-title" id = "beach">
+                    <span>Beach </span>
+                    <span> <i class = "fas fa-umbrella-beach"></i></span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class = "category-title" id = "island">
+                    <span>Island </span>
+                    <span> <i class = "fas fa-island-tropical"></i></span>
+                </div>
+            </div>
+              <div class="swiper-slide">
+                <div class = "category-title" id = "city">
+                    <span>City </span>
+                    <span> <i class = "fas fa-city"></i></span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class = "category-title" id = "jungle">
+                    <span>Jungle </span>
+                    <span> <i class="fas fa-trees"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="items">
+        <div class="items-container container">
+            <div class="items-row">
+                <!-- single item -->
+                <div class="items-col all beach">
+                    <div class="item-img">
+                        <img src="img/beach1.jpg" alt="">
+                    </div >
+                    <div class="item-content">
+                        <div class="item-content-left">
+                            <p>Nha Trang, Viet Nam</p>
+                            <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                        </div>
+                        <div class="item-content-right">
+                            <p>140$/1 tours</p>
+                        </div>
+                    </div>
+                    <div class="icon1">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="icon2">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="icon3">
+                        <i class="fal fa-heart"></i>
+                    </div>
+                </div>
+                <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all beach">
+                <div class="item-img">
+                    <img src="img/beach2.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all beach">
+                <div class="item-img">
+                    <img src="img/beach3.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all beach">
+                <div class="item-img">
+                    <img src="img/beach4.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all jungle">
+                <div class="item-img">
+                    <img src="img/jungle1.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all jungle">
+                <div class="item-img">
+                    <img src="img/jungle2.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all jungle">
+                <div class="item-img">
+                    <img src="img/jungle3.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+             <!-- single item -->
+             <div class="items-col all jungle">
+                <div class="item-img">
+                    <img src="img/jungle4.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all mountain">
+                <div class="item-img">
+                    <img src="img/mountain1.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all mountain">
+                <div class="item-img">
+                    <img src="img/mountain2.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all mountain">
+                <div class="item-img">
+                    <img src="img/mountain3.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+              <!-- single item -->
+              <div class="items-col all mountain">
+                <div class="item-img">
+                    <img src="img/mountain4.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+              <!-- single item -->
+              <div class="items-col all mountain">
+                <div class="item-img">
+                    <img src="img/mountain5.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+               <!-- single item -->
+               <div class="items-col all mountain">
+                <div class="item-img">
+                    <img src="img/mountain6.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all city">
+                <div class="item-img">
+                    <img src="img/city1.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all city">
+                <div class="item-img">
+                    <img src="img/city2.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all city">
+                <div class="item-img">
+                    <img src="img/city3.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all city">
+                <div class="item-img">
+                    <img src="img/city4.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all city">
+                <div class="item-img">
+                    <img src="img/city5.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            <!-- single item -->
+            <div class="items-col all city">
+                <div class="item-img">
+                    <img src="img/city6.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+             <!-- single item -->
+             <div class="items-col all island">
+                <div class="item-img">
+                    <img src="img/island1.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+             <!-- single item -->
+             <div class="items-col all island">
+                <div class="item-img">
+                    <img src="img/island2.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+             <!-- single item -->
+             <div class="items-col all island">
+                <div class="item-img">
+                    <img src="img/island3.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+             <!-- single item -->
+             <div class="items-col all island">
+                <div class="item-img">
+                    <img src="img/island4.jpg" alt="">
+                </div >
+                <div class="item-content">
+                    <div class="item-content-left">
+                        <p>Nha Trang, Viet Nam</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span> Asian</span></p>
+                    </div>
+                    <div class="item-content-right">
+                        <p>140$/1 tours</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="icon2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="icon3">
+                    <i class="fal fa-heart"></i>
+                </div>
+            </div>
+            <!--end of single item -->
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+
+        <div class="box-container  container">
+      
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Home </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Services </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Gallery </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Packeges </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Review </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> contact </a>
+            </div>
+      
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> 09247872323 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> koozu0909@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Nguyen kiem Go vap </a>
+            </div>
+      
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> Pinterest </a>
+            </div>
+      
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"> <i class="fab fa-windows"></i> Windows </a>
+                <a href="#"> <i class="fab fa-apple"></i> App store </a>
+                <a href="#"> <i class="fab fa-google-play"></i> Play store </a>
+            </div>
+      
+        </div>
+      </section>
+  </main>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
