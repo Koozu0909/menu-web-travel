@@ -420,3 +420,29 @@ ul {
 .footer .credit span{
  color:#2980b9;
 }
+
+.go-to-top{
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+}
+.go-to-top button{
+    padding: 15px 18px;
+    border-radius: 7px;
+    border: none;
+    background-color: #cde3e8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.go-to-top i{
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+}
+.go-to-top button:hover{
+    transform: scale(1.05);
+    background-color: #9bd6e4;
+}
+/* .items{
+    display: none;
+} */

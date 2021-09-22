@@ -69,3 +69,23 @@ function changeActivePosition(activeItem){
     }
     activeItem.classList.add('active');
 };
+
+
+
+
+var btnGoTop = document.getElementById("btn-to-top");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btnGoTop.style.display = "block";
+  } else {
+    btnGoTop.style.display = "none";
+  }
+}
+
+function goToTopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
