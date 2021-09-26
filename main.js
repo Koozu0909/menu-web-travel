@@ -1,7 +1,7 @@
 /********  SHOWBARS  *********/
-const navMenu = document.getElementById('nav-menu'),
-    navToggle =  document.getElementById('nav-toggle'),
-    navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById('nav-menu');
+const   navToggle =  document.getElementById('nav-toggle');
+const    navClose = document.getElementById('nav-close');
 
 if(navToggle){
     navToggle.addEventListener('click', () => {
@@ -73,7 +73,7 @@ function changeActivePosition(activeItem){
 
 
 
-var btnGoTop = document.getElementById("btn-to-top");
+const btnGoTop = document.getElementById("btn-to-top");
 
 window.onscroll = function() {scrollFunction()};
 
@@ -89,3 +89,196 @@ function goToTopFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+const filterGuest = document.querySelector(".filter-guest")
+const filterIcon = document.getElementById("filter-icon")
+const filterAnyTime = document.querySelector(".filter-anytime")
+const filterIcon1 = document.getElementById("filter-icon1")
+const guestBlock = document.querySelector(".Guest-block")
+const timeBlock = document.querySelector(".calendar-container")
+
+filterGuest.addEventListener("click", function(){
+  filterIcon1.classList.toggle("filter-icon");
+  guestBlock.classList.toggle("active-guest-block");
+} )
+
+filterAnyTime.addEventListener("click", function(){
+  filterIcon.classList.toggle("filter-icon");
+  timeBlock.classList.toggle("active-guest-block");
+} )
+
+
+
+////// Adults count
+let countAdult = 0;
+const valueAdult = document.querySelector("#value1");
+const btnAdults = document.querySelectorAll(".btn1");
+const valueGuest = document.querySelector("#guest_value");
+
+btnAdults.forEach(function (btnAdult) {
+  btnAdult.addEventListener("click", function (e) {
+    const styles = e.currentTarget.classList;
+    if (styles.contains("decrease")) {
+      countAdult--;
+    } else if (styles.contains("increase")) {
+      countAdult++;
+    } else {
+      countAdult = 0;
+    }
+
+    if (countAdult > 4) {
+      countAdult =4;
+    }
+    if (countAdult < 0) {
+      countAdult =0;
+    }
+    if (countAdult === 0) {
+      valueAdult.style.color = "#222";
+    }
+    valueAdult.textContent = countAdult;
+  });
+});
+////// Children count
+let countChildren = 0;
+const valueChildren = document.querySelector("#value2");
+const btnChildrens = document.querySelectorAll(".btn2");
+
+
+btnChildrens.forEach(function (btnChildren) {
+  btnChildren.addEventListener("click", function (e) {
+    const styles = e.currentTarget.classList;
+    if (styles.contains("decrease1")) {
+      countChildren--;
+    } else if (styles.contains("increase1")) {
+      countChildren++;
+    } else {
+      countChildren = 0;
+    }
+
+    if (countChildren > 4) {
+      countChildren =4;
+    }
+    if (countChildren < 0) {
+      countChildren =0;
+    }
+    if (countChildren === 0) {
+      valueChildren.style.color = "#222";
+    }
+    valueChildren.textContent = countChildren;
+  });
+});
+//Infants count (Under 2)
+let countInfant = 0;
+const valueInfant = document.querySelector("#value3");
+const btnInfants = document.querySelectorAll(".btn3");
+
+
+  btnInfants .forEach(function (btnInfant) {
+  btnInfant.addEventListener("click", function (e) {
+    const styles = e.currentTarget.classList;
+    if (styles.contains("decrease2")) {
+      countInfant--;
+    } else if (styles.contains("increase2")) {
+      countInfant++;
+    } else {
+      countInfant = 0;
+    }
+
+    if (countInfant > 4) {
+      countInfant =4;
+    }
+    if (countInfant < 0) {
+      countInfant =0;
+    }
+    if (countInfant === 0) {
+      valueInfant.style.color = "#222";
+    }
+    valueInfant.textContent = countInfant;
+  });
+});
+
+
+const date = new Date();
+
+function renderCalendar() {
+  date.setDate(1);
+
+  const monthDays = document.querySelector(".days");
+
+  const lastDay = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0
+  ).getDate();
+
+  const prevLastDay = new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    0
+  ).getDate();
+
+  const firstDayIndex = date.getDay();
+
+  const lastDayIndex = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0
+  ).getDay();
+
+  const nextDays = 7 - lastDayIndex - 1;
+
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+
+  document.querySelector(".date p").innerHTML = new Date().toDateString();
+
+  let days = "";
+
+  for (let x = firstDayIndex; x > 0; x--) {
+    days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+  }
+
+  for (let i = 1; i <= lastDay; i++) {
+    if (
+      i === new Date().getDate() &&
+      date.getMonth() === new Date().getMonth()
+    ) {
+      days += `<div class="today">${i}</div>`;
+    } else {
+      days += `<div>${i}</div>`;
+    }
+  }
+
+  for (let j = 1; j <= nextDays; j++) {
+    days += `<div class="next-date">${j}</div>`;
+    monthDays.innerHTML = days;
+  }
+};
+
+document.querySelector(".prev").addEventListener("click", () => {
+  date.setMonth(date.getMonth() - 1);
+  renderCalendar();
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+  date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+});
+
+renderCalendar();

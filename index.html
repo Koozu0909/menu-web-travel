@@ -85,18 +85,79 @@ href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
             </div>
             <div class="category-filter-right">
                 <div class="filters">
-                    <div >
-                        <p>Anytime <span><i class="far fa-chevron-down"></i></span></p>
+                    <div class="filter-anytime" >
+                        <p>Anytime <span><i class="far fa-chevron-down" id="filter-icon"></i></span></p>
                     </div>
-                    <div class="filter-hover">
-                        <p>Guest <span><i class="far fa-chevron-down"></i></span></p>
+                    <div class="filter-hover filter-guest" >
+                        <p>Guest <span><i class="far fa-chevron-down  " id="filter-icon1"></i></span></p>
                     </div>
                     <div  class="filter-hover">
                         <p> <span><i class="fas fa-filter"></i></span> Filter</p>
                     </div>
                 </div>
             </div>
+            <div class="Guest-block">
+                <div class="card-set" >
+                    <div class="card-adults">
+                      <div class="card-adult">
+                        Adults
+                      </div>
+                      <div class="card-adults-count">
+                        <button class="btn1 decrease "><i class="fas fa-minus"></i></button>
+                        <span id="value1">0</span>
+                        <button class="btn1 increase "><i class="fas fa-plus"></i></button>
+                      </div>
+                    </div>
+                    <div class="card-childrens">
+                      <div class="card-children">
+                        Childrens <span> (Ages 2–12)</span>
+                      </div>
+                      <div class="card-children-count">
+                        <button class="btn2 decrease1 "><i class="fas fa-minus"></i></button>
+                        <span id="value2">0</span>
+                        <button class="btn2 increase1 "><i class="fas fa-plus"></i></button>
+                      </div>
+                    </div>
+                    <div class="card-infants">
+                      <div class="card-infant">
+                        Infants  <span>(Under 2)</span>
+                      </div>
+                      <div class="card-infant-count">
+                        <button class="btn3 decrease2 "><i class="fas fa-minus"></i></button>
+                        <span id="value3">0</span>
+                        <button class="btn3 increase2 "><i class="fas fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Guest-block-bottom">
+                   <div class="Guest-block-bottom-content">
+                    <p>Clear</p>
+                    <button>Save</button>
+                  </div>
+            </div>
         </div>
+        <div class="calendar-container">
+            <div class="calendar">
+              <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                  <h1></h1>
+                  <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+              </div>
+              <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="days"></div>
+            </div>
+          </div>
         <div class="swiper ">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -785,6 +846,9 @@ href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
       </section>
       <section class="go-to-top">
         <button onclick="goToTopFunction()" id="btn-to-top" title="Go to top"><i class="fas fa-arrow-to-top"></i></button>
+      </section>
+      <section style="height: 500px;">
+
       </section>
   </main>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
